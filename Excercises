@@ -1,0 +1,11 @@
+import string
+
+def print_rangoli(size):
+    # your code goes here
+     alfa = string.ascii_lowercase
+     length = (size * 4) - 3
+     for i in reversed (range(size)):
+         print(("-".join(alfa[(size - 1):i:-1]+ alfa[i:(size)])).center(length,'-'))
+     for i in range(size - 1):
+         pattern = ("-".join(alfa[(size - 1):(i + 1):-1]+ alfa[(i + 1):(size)])).center(length,'-')
+         print(pattern)    
