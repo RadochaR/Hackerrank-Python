@@ -1,7 +1,6 @@
 import string
 
 def print_rangoli(size):
-    # your code goes here
      alfa = string.ascii_lowercase
      length = (size * 4) - 3
      for i in reversed (range(size)):
